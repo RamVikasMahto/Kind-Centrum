@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <!--
+    ##################################################
+    # Project ID    : 20160414-900
+    # Reference     : IKC
+    # Latest update : April 22, 2016
+    ##################################################
+    -->
+    <head>
+        <title>IKC Leeuwarden</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="keywords" content="key, words" />
+        <meta name="description" content="Website description" />
+        <meta name="robots" content="noindex, nofollow" /><!-- change into index, follow -->
+        <link rel="stylesheet" href="stylesheets/global.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/jquery.mmenu.css" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="javascripts/global.js"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="javascripts/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- / wrapper \ -->
+        <div id="wrapper">
+
+            <!-- / main container \ -->
+            <div id="mainCntr">
+
+                <!-- / header container \ -->
+                <header id="headerCntr">
+                    <div class="center">
+
+                        <!-- / menu box \ -->
+                        <nav class="menuBox">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon.png" alt="">
+                                        <span>Home </span> 
+                                    </a>
+                                </li>
+                                <li class="green">
+                                    <a href="#">
+                                        <img src="images/icon1.png" alt="">
+                                        <span>Organisatie </span> 
+                                    </a>
+                                </li>
+                                <li class="red drop">
+                                    <a href="#">
+                                        <img src="images/icon2.png" alt="">
+                                        <span>Voorgeschiedenis</span> 
+                                    </a>
+                                    <ul>
+                                        <li><a href="#">This is menu item 1</a></li>
+                                        <li><a href="#">This is menu item 2</a></li>
+                                        <li><a href="#">This is a longer menu item on 2 rows</a></li>
+                                        <li><a href="#">This is menu item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="yellow">
+                                    <a href="#">
+                                        <img src="images/icon3.png" alt="">
+                                        <span>Communicatie </span> 
+                                    </a>
+                                </li>
+                                <li class="pruple">
+                                    <a href="#">
+                                        <img src="images/icon4.png" alt="">
+                                        <span>Nieuws </span> 
+                                    </a>
+                                </li>
+                                <li class="contact">
+                                    <a href="#">
+                                        <img src="images/icon5.png" alt="">
+                                        <span>Contact</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- \ menu box / -->
+
+                        <span class="mobileMenu">Menu</span> 
+                        <a class="home" href="#">
+                            <img src="images/home-icon.jpg" alt="">
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                </header>
+                <!-- \ header container / -->
+
+                <div id="map"></div>
+                <div id="left-data">
+
+                    <!-- / banner box \ -->
+                    <section class="bannerBox">
+                        <div class="center">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- / np box \ -->
+                            <section class="npBox text-right">
+                                <div class="center">
+                                    <ul>
+                                        <li><a href="#">home</a></li>
+                                        <li><a href="#">informatie</a></li>
+                                        <li><a href="#">profielen</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!-- \ np box / -->
+
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                    <!-- \ banner box / -->
+
+                    <!-- / content container \ -->
+                    <div id="contentCntr">
+
+                        <!-- / mapinfo box \ -->
+                        <div class="mapinfoBox">
+                            <div class="center">
+                                <img src="images/element-img7.png" alt="" class="element">
+                                <h1>IKC’s in<br />Leeuwarden</h1>
+                                <ul>
+                                    <li>IKC de Kinderkoepel</li>
+                                    <li class="two">IKC Johan de walestraat</li>
+                                    <li class="three">IKC J.W. Frisoschool</li>
+                                </ul>
+                                <div id="mobliemap"></div>
+                                <img src="images/element-img8.png" alt="" class="element1">
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <!-- \ mapinfo box / -->
+
+                    </div>
+                    <!-- \ content container / -->
+
+                    <!-- / footer container \ -->
+                    <footer id="footerCntr">
+
+                        <!-- / footer box \ -->
+                        <div class="footerBox">
+                            <div class="center">
+                                <ul>
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">disclaimer</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                                <a class="m-logo" href="#">
+                                    <img src="images/m.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- \ footer box / -->
+
+                    </footer>
+                    <!-- \ footer container / -->
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- \ main container / -->
+
+        </div>
+        <!-- \ wrapper / -->
+
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="javascripts/global.js"></script>
+        <script>
+// When the window has finished loading create our google map below
+           var styles = [
+	{
+		featureType: 'water',
+		elementType: 'all',
+		stylers: [
+		]
+	},{
+		featureType: 'landscape.natural',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#f8f8f8' },
+			{ saturation: -100 },
+			{ lightness: 45 },
+			{ visibility: 'on' }
+		]
+	},{
+		featureType: 'landscape.man_made',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#d4d4d4' },
+			{ saturation: -100 },
+			{ lightness: -7 },
+			{ visibility: 'on' }
+		]
+	},{
+		featureType: 'poi',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#d4d4d4' },
+			{ saturation: -100 },
+			{ lightness: 23 },
+			{ visibility: 'on' }
+		]
+	}
+];
+var options = {
+	mapTypeControlOptions: {
+		mapTypeIds: [ 'Styled']
+	},
+	 center: new google.maps.LatLng(51.837116, 4.169817),  
+	center: new google.maps.LatLng(53.210962, 5.815622),  
+	center: new google.maps.LatLng(53.192924, 5.801928),  
+	zoom: 13,
+	scrollwheel: false,
+	mapTypeId: 'Styled'
+};
+var div = document.getElementById('map');
+var map = new google.maps.Map(div, options);
+var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+map.mapTypes.set('Styled', styledMapType);
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.202434, 5.808948),
+                    map: map,
+					icon: 'images/mark.png',
+                    title: 'IKC de Kinderkoepel!'
+                });
+                  // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.192924, 5.801928),
+                    map: map,
+					icon: 'images/mark2.png',
+                    title: 'IKC Johan de walestraat!'
+                });
+                  // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.210962, 5.815622),
+                    map: map,
+					icon: 'images/mark3.png',
+                    title: 'IKC J.W. Frisoschool!'
+                });
+</script>
+        <script>
+// When the window has finished loading create our google map below
+           var styles = [
+	{
+		featureType: 'water',
+		elementType: 'all',
+		stylers: [
+		]
+	},{
+		featureType: 'landscape.natural',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#f8f8f8' },
+			{ saturation: -100 },
+			{ lightness: 45 },
+			{ visibility: 'on' }
+		]
+	},{
+		featureType: 'landscape.man_made',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#d4d4d4' },
+			{ saturation: -100 },
+			{ lightness: -7 },
+			{ visibility: 'on' }
+		]
+	},{
+		featureType: 'poi',
+		elementType: 'all',
+		stylers: [
+			{ hue: '#d4d4d4' },
+			{ saturation: -100 },
+			{ lightness: 23 },
+			{ visibility: 'on' }
+		]
+	}
+];
+var options = {
+	mapTypeControlOptions: {
+		mapTypeIds: [ 'Styled']
+	},
+	 center: new google.maps.LatLng(51.837116, 4.169817),  
+	center: new google.maps.LatLng(53.210962, 5.815622),  
+	center: new google.maps.LatLng(53.192924, 5.801928),  
+	zoom: 13,
+	scrollwheel: false,
+	mapTypeId: 'Styled'
+};
+var div = document.getElementById('mobliemap');
+var map = new google.maps.Map(div, options);
+var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+map.mapTypes.set('Styled', styledMapType);
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.202434, 5.808948),
+                    map: map,
+					icon: 'images/mark.png',
+                    title: 'IKC de Kinderkoepel!'
+                });
+                  // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.192924, 5.801928),
+                    map: map,
+					icon: 'images/mark2.png',
+                    title: 'IKC Johan de walestraat!'
+                });
+                  // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(53.210962, 5.815622),
+                    map: map,
+					icon: 'images/mark3.png',
+                    title: 'IKC J.W. Frisoschool!'
+                });
+</script>
+    </body>
+</html>
